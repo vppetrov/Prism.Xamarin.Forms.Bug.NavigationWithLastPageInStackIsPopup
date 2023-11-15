@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:BlankApp1.ViewModels;assembly=BlankApp1"
+             x:Class="BlankApp1.Views.MainPage"
+             x:DataType="viewModels:MainPageViewModel"
+             Title="{Binding Title}">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Label Text="Welcome to Xamarin Forms and Prism!" />
+        <Button Text="Navigate to page 1" Command="{Binding NavigateToPage1Command}" />
+	</StackLayout>
+
+</ContentPage>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<popup:PopupPage xmlns="http://xamarin.com/schemas/2014/forms" 
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+                 xmlns:prism="http://prismlibrary.com"
+                 xmlns:viewModels="clr-namespace:BlankApp1.ViewModels;assembly=BlankApp1"
+                 prism:ViewModelLocator.AutowireViewModel="True"
+                 Padding="100"
+                 x:Class="BlankApp1.Views.Popup2"
+                 x:DataType="viewModels:Page2ViewModel"
+                 Title="{Binding Title}">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+		<Label Text="Popup 2" />
+		<Button Text="Navigate back to main page" Command="{Binding NavigateToMainPageCommand}" />
+	</StackLayout>
+
+</popup:PopupPage>
